@@ -26,7 +26,7 @@ public class Order {
     private Member member;
 
     @OneToMany(mappedBy = "order", cascade = ALL)
-    private List<OrderItem> orderItems = new ArrayList();
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     @OneToOne(fetch = LAZY, cascade = ALL)
     @JoinColumn(name = "delivery_id")
