@@ -34,3 +34,13 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+def cnf = [
+		buildFileName: 'jpaShop',
+		buildVersion: '1.0.0'
+]
+
+bootJar {
+	baseName = cnf.buildFileName
+	version = cnf.buildVersion
+}
