@@ -37,7 +37,7 @@ test {
 
 def cnf = [
 		buildFileName: 'jpaShop',
-		buildVersion: '1.0.0'
+		buildVersion: '0.1'
 ]
 
 bootJar {
